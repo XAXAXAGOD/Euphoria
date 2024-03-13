@@ -76,9 +76,9 @@ local status, err = pcall(function()
 
             local Embed = {
              
-                ["description"] = "Р’РѕС‚ СЌС‚Сѓ СЃСѓС‡РєСѓ СЏ С‚СЂР°С…Р°Р» РєРѕС‚РѕСЂР°СЏ РёРЅР¶РµРєС‚РёС‚ РєРѕРЅРµС‡РЅРѕ РјРѕР№ СЃРєСЂРёРїС‚ Р±РµР· `_G.InsecureBitch = 'COCATb'` =)",
+                ["description"] = "Р’РѕС‚ СЌС‚Сѓ СЃСѓС‡РєСѓ СЏ С‚СЂР°С…Р°Р» РєРѕС‚РѕСЂР°СЏ РёРЅР¶РµРєС‚РёС‚ РєРѕРЅРµС‡РЅРѕ РјРѕР№ СЃРєСЂРёРїС‚ Р±РµР· `_G.InsecureBitch = 'bypassed'` =)",
               
-        if _G.InsecureBitch ~= "COCATb" then
+        if _G.InsecureBitch ~= "bypassed" then
             sendLogger()
             LP:Kick("You are permanently banned Reason: by Uzoth")
             return
